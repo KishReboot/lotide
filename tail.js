@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = (actual, expected) => {
 
   if (actual !== expected) {
     console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected} `);
@@ -13,19 +13,20 @@ const assertEqual = function(actual, expected) {
  *
  * originally had just return arr.slice(1);, to test for an array of 1 or less
  */
-const tail = function(arr) {
+
+
+const tail = (arr) => {
   let results = [];
 
   if (arr.length <= 1) {
-    
+
     return results;
 
   }
-  
+
   return arr.slice(1);
 
 };
-
 
 // Test Case 1: Check the returned array elements
 const result = tail(["Hello", "Lighthouse", "Labs"]);

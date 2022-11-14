@@ -1,4 +1,5 @@
-const assertEqual = function(actual, expected) {
+
+const assertEqual = (actual, expected) => {
 
   if (actual !== expected) {
     console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected} `);
@@ -10,14 +11,26 @@ const assertEqual = function(actual, expected) {
 
 // Returning the 'head' of an array, aka first element [0]
 // Probably could use slice here as well
-
-const head = function(arr) {
+/*
+const head = (arr) => {
   if (arr === []) {
+    
     return undefined;
+  
   }
+  
   return arr[0];
 
 };
+*/
+
+const head = (arr) => {
+
+  if (arr !== []) return arr[0];
+  if (arr === []) return undefined;
+};
+
+
 /* You should always be thinking about other scenarios to consider.
  * Here are some such examples and how they should be handled:
  * An array with only one element should still yield that one element as its
