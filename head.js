@@ -12,13 +12,13 @@ const assertEqual = function(actual, expected) {
 // Probably could use slice here as well
 
 const head = function(arr) {
-if (arr === []) {
-  return undefined;
-}
-return arr[0];
+  if (arr === []) {
+    return undefined;
+  }
+  return arr[0];
 
 };
-/* You should always be thinking about other scenarios to consider. 
+/* You should always be thinking about other scenarios to consider.
  * Here are some such examples and how they should be handled:
  * An array with only one element should still yield that one element as its
  * head
