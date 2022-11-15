@@ -1,4 +1,4 @@
-// Implement without which will return a subset of a given array, removing 
+// Implement without which will return a subset of a given array, removing
 // unwanted elements.
 
 // Copy your assertArraysEqual and eqArrays functions into this new file.
@@ -31,8 +31,8 @@ const assertArraysEqual = (actual, expected) => {
 
 };
 
-// This function should take in a source array and a itemsToRemove array. It 
-// should return a new array with only those elements from source that are not 
+// This function should take in a source array and a itemsToRemove array. It
+// should return a new array with only those elements from source that are not
 // present in the itemsToRemove array.
 
 // (2) Loop through both arrays; 'source' and 'itemsToRemove'
@@ -43,13 +43,13 @@ const assertArraysEqual = (actual, expected) => {
 
 const without = (source, itemsToRemove) => {
 
-  for(i = 0; i < source.length; i++) {
+  for (let i = 0; i < source.length; i++) {
 
-    for (let j =0; j < itemsToRemove.length; j++) {
+    for (let j = 0; j < itemsToRemove.length; j++) {
 
       if (source[i] === itemsToRemove[j])
 
-      source.splice(i, 1);
+        source.splice(i, 1);
 
     }
 
