@@ -28,7 +28,7 @@ const assertArraysEqual = (actual, expected) => {
  */
 
 /* steps
- * (Math.floor(arr.length / 2)) 
+ * (Math.floor(arr.length / 2))
  *
  * * If array has 1 or 2 elements, return empty array < 3
  * * If array has an odd number of elements, return the middle value
