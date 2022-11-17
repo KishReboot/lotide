@@ -29,7 +29,7 @@ const assertArraysEqual = (actual, expected) => {
 
 /* Create empty object
  * iterate/loop through the array(sentence[i(characters)])
- * 
+ *
  *
  */
 
@@ -41,7 +41,7 @@ const letterPositions = (sentence) => {
 
     if (sentence[i] !== " ") {
 
-      if (results !== [sentence[i]] ) {
+      if (results !== [sentence[i]]) {
         
         results[sentence[i]] = [];
         results[sentence[i]].push(i);
@@ -53,9 +53,9 @@ const letterPositions = (sentence) => {
       
       //results[sentence[i]] ? results[sentence[i]].push(i) : results[sentence[i]] = [i];
 
-      }
-
     }
+
+  }
 
   return results;
 };
