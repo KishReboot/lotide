@@ -24,7 +24,7 @@ const assertEqual = (actual, expected) => {
 const countLetters = (str) => {
   
   const result = {};
-  lowerCaseStr = str.toLowerCase().replace(/[ ,.?!]/g, "");
+  let lowerCaseStr = str.toLowerCase().replace(/[ ,.?!]/g, "");
   
   for (let letter of lowerCaseStr) {
 
@@ -40,7 +40,7 @@ const countLetters = (str) => {
 
 
 console.log(countLetters('AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'));
-console.log(countLetters('LHL'));
+assertEqual(countLetters('LHL'));
 console.log(countLetters('I am the night, I am vengeance. I, am, the Batman.'));
 console.log(countLetters('Matt Mercer is the coolest voice actor.'));
 console.log(countLetters('Am I the best!?'));
