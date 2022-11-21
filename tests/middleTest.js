@@ -26,10 +26,3 @@ describe("#tail", () => {
   });
 
 });
-
-
-  
-// For arrays with an even number of elements, an array containing the two
-// elements in the middle should be returned
-//assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-//assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
