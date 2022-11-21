@@ -1,28 +1,4 @@
-
-const assertEqual = (actual, expected) => {
-
-  if (actual !== expected) {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected} `);
-  } else {
-    console.log(`✔✔✔ Assertion Passed: ${actual} === ${expected}`);
-  }
-
-};
-
-// Returning the 'head' of an array, aka first element [0]
-// Probably could use slice here as well
-/*
-const head = (arr) => {
-  if (arr === []) {
-    
-    return undefined;
-  
-  }
-  
-  return arr[0];
-
-};
-*/
+const assertEqual = require('./assertEqual');
 
 const head = (arr) => {
 
