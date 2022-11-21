@@ -38,6 +38,7 @@ const countLetters = (str) => {
 
 };
 
+module.exports = countLetters;
 
 console.log(countLetters('AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'));
 assertEqual(countLetters('LHL'));
