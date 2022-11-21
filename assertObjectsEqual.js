@@ -1,35 +1,5 @@
-const eqObjects = function(object1, object2) {
+const eqObjects = require('./eqObjects');
 
-  let obj1 = Object.keys(object1);
-  let obj2 = Object.keys(object2);
-  
-  if (obj1.length === obj2.length) {
-
-    for (let key of obj1) {
-
-      if (Array.isArray(obj1[key]) && Array.isArray(obj2[key])) {
-
-        if (!eqArrays(obj1[key], obj2[key])) {
-          
-          return false;
-
-        }
-
-      }
-
-    }
-    
-    return true;
-
-  }
-  return false;
-};
-
-// Functions that do not return values and instead print out messages to the
-// console are more difficult to test using assertions. This is because we
-// cannot simply compare their return value to an expected value.
-
-// FUNCTION IMPLEMENTATION
 const assertObjectsEqual = (actual, expected) => {
   const inspect = require('util').inspect; // <= add this line
 
